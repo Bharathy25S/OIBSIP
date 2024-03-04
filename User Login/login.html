@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign In form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">Sign In</h1>
+		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Email</div>
+			<input autocomplete="off" type="text" name="email" placeholder="Enter your email">
+			<div id="email_error">Please enter your valid Email</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password" placeholder="Enter your Password">
+			<div id="pass_error">Please enter your correct Password</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>	
+	<script src="script.js"></script>
+</body>
+</html>
